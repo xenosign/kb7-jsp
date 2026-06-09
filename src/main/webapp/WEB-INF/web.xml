@@ -12,6 +12,7 @@
         <servlet-name>hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>loop</servlet-name>
         <jsp-file>/loop.jsp</jsp-file>
@@ -20,5 +21,15 @@
     <servlet-mapping>
         <servlet-name>loop</servlet-name>
         <url-pattern>/loop</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>form</servlet-name>
+        <jsp-file>/WEB-INF/views/form.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>form</servlet-name>
+        <url-pattern>/member/form</url-pattern>
     </servlet-mapping>
 </web-app>
