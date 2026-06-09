@@ -30,10 +30,7 @@ public class SubmitServlet extends HttpServlet {
         getServletContext().setAttribute("appScope", "application에 저장된 값 - 서버 재시작 전까지");
 
 
-
-
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/result.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/check.jsp");
         dispatcher.forward(request, response);
 
 //        // jsp 적용 안된 버전

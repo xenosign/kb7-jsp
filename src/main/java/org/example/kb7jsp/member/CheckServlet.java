@@ -17,7 +17,7 @@ public class CheckServlet extends HttpServlet {
 
         // redirect로 넘어왔으니 request 스코프는 비어있음
         // session, application은 살아있음
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/result.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/check.jsp");
         dispatcher.forward(request, response);
     }
 }
