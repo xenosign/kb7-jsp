@@ -14,10 +14,13 @@ public class SubmitServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
+//        request.setCharacterEncoding("UTF-8");
 
         String name = request.getParameter("name");
         request.setAttribute("name", name);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/result.jsp");
+        dispatcher.forward(request, response);
 
         // 생명 주기 추가
         // ① request 스코프
@@ -30,8 +33,6 @@ public class SubmitServlet extends HttpServlet {
         getServletContext().setAttribute("appScope", "application에 저장된 값 - 서버 재시작 전까지");
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/check.jsp");
-        dispatcher.forward(request, response);
 
 //        // jsp 적용 안된 버전
 //        response.sendRedirect(
