@@ -18,5 +18,9 @@
     <a href="/setCookie">COOKIE</a>
     /
     <a href="life">LIFE</a>
+    /
+    <a href="/student/hell">STUDENT HELL</a>
+    /
+    <a href="/student/list">STUDENT MVC</a>
 </body>
 </html>
